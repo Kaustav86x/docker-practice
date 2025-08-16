@@ -1,8 +1,8 @@
 # base image ( using version 20 as it's more stable and won't break in production )
 FROM node:20-alpine AS production
 
-# set env variable
-ENV NODE_ENV production
+# set env variable ( NODE_ENV production, key value is deprecated )
+ENV NODE_ENV=production
 
 #setting up working directory
 WORKDIR /app
